@@ -1,0 +1,24 @@
+{
+   "name": "NIT听力平台助手",
+   "version": "1.3",
+   "manifest_version": 2,
+   "minimum_chrome_version": "18",
+   "description": "解除听力平台限制，自动点选题目",
+   "options_page": "pages/options.html",
+   "browser_action": {
+      "default_icon": "icons/small.png"
+      // "default_popup": "pages/popup.html"
+   },
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "64": "icons/64.png"
+   },
+   "content_scripts": [ {
+      "js": [ "include/onload.js", "include/jquery.js", "include/alert.js" ],
+      "matches": [ "http://wypt.nit.net.cn:8085/jasinda/zycommons/dowork.do?*" ],
+      "run_at": "document_end"
+   } ]
+}
