@@ -1,6 +1,9 @@
 {
+   "background": {
+       "page": "include/background.html"
+   },
    "name": "NIT听力平台助手",
-   "version": "1.3.5",
+   "version": "1.3.6",
    "manifest_version": 2,
    "description": "解除听力平台限制，自动点选题目",
    "browser_action": {
@@ -13,6 +16,7 @@
       "48": "icons/48.png",
       "64": "icons/64.png"
    },
+   "options_page": "pages/options.html",
    "content_scripts": [ {
       "js": [ "include/jquery.js", "include/auto.js" ],
       "matches": [ "http://wypt.nit.net.cn:8085/jasinda/zycommons/dowork.do?*" ],
