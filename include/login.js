@@ -4,6 +4,9 @@
  * @Version 1.3.6
  */
 
+
+$("body").removeAttr("onload");
+
 $(document).ready(function() {
     $("form").attr("action", "/jasinda/login/loginByEx.do");
     $("div.logn_a").append("<input name=\"j_param\" id=\"j_param\" " + 

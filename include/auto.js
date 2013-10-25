@@ -52,7 +52,6 @@ function removeRestrictions() {
     $("body").removeAttr("oncopy");
     $("body").removeAttr("onbeforecopy");
     $("body").removeAttr("onmouseup");
-    window.document.oncontextmenu = (function() { return true; });
 }
 
 function fixPlayerRepresentationError() {

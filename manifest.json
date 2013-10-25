@@ -25,5 +25,9 @@
       "js": [ "include/jquery.js", "include/login.js" ],
       "matches": [ "http://wypt.nit.net.cn:8085/jasinda/login/index.jsp" ],
       "run_at": "document_end"
+   }, {
+      "js": [ "include/jquery.js", "include/checkBrowser.js" ],
+      "matches": [ "http://wypt.nit.net.cn:8085/*" ],
+      "run_at": "document_start"
    } ]
 }
